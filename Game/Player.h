@@ -23,6 +23,7 @@ public:
     
     Player();
     Player( int pHealth, int pLevel );
+    Player( std::string pName, int pHealth, int pLevel );
     
     double getXp();
     void setXp( double pXp );

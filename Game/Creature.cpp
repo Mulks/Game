@@ -18,7 +18,8 @@ Creature::Creature( int cHealth, int cLevel ){
     setLevel( cLevel );
 }
 
-Creature::Creature( std::string name, int cHealth, int cLevel ){
+Creature::Creature( std::string cName, int cHealth, int cLevel ){
+    setName( cName );
     setHealth( cHealth );
     setLevel( cLevel );
 }

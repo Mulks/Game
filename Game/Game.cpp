@@ -18,16 +18,16 @@ int Game(){
     
     cout << "Starting game..." << endl;
     
-    Creature demon( 100 , 1 );
-    Player Mulky( 200 , 1 );
+    Creature demon( "Nagger", 100 , 1 );
+    Player Mulky( "Mulky", 150 , 1 );
     
-    cout << "Demon health: " << demon.getHealth() << endl;
-    cout << "\nMulky attacks demon." << endl;
+    cout << demon.getName() << "'s health: " << demon.getHealth() << endl;
+    cout << "\nMulky attacks " << demon.getName() << endl;
     
     demon.setHealth( demon.getHealth() - Mulky.attack() );
     
     
-    cout << "Demon health: " << demon.getHealth() << endl;
+    cout << demon.getName() << "'s health: " << demon.getHealth() << endl;
     
     
     return 0;

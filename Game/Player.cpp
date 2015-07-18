@@ -18,6 +18,12 @@ Player::Player( int pHealth, int pLevel ){
     setLevel( pLevel );
 }
 
+Player::Player( std::string pName, int pHealth, int pLevel ){
+    setName( pName );
+    setHealth( pHealth );
+    setLevel( pLevel );
+}
+
 double Player::getXp(){
     return xp;
 }

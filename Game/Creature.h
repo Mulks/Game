@@ -24,7 +24,7 @@ public:
     
     Creature();
     Creature( int cHealth, int cLevel );
-    Creature( std::string name, int cHealth, int cLevel );
+    Creature( std::string cName, int cHealth, int cLevel );
     
     int getHealth();
     void setHealth( int cHealth );
