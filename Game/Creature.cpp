@@ -7,3 +7,19 @@
 //
 
 #include "Creature.h"
+
+int Creature::getHealth(){
+    return health;
+}
+
+void Creature::setHealth( int cHealth ){
+    health = cHealth;
+}
+
+int Creature::getLevel(){
+    return level;
+}
+
+void Creature::setLevel( int cLevel ){
+    level = cLevel;
+}
