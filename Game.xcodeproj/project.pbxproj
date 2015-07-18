@@ -10,6 +10,7 @@
 		262301B31B5A03F700C333A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301B21B5A03F700C333A8 /* main.cpp */; };
 		262301BB1B5A041300C333A8 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301B91B5A041300C333A8 /* Game.cpp */; };
 		262301C11B5A067000C333A8 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301BF1B5A067000C333A8 /* Creature.cpp */; };
+		262301C41B5A100E00C333A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301C21B5A100E00C333A8 /* Player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		262301BA1B5A041300C333A8 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		262301BF1B5A067000C333A8 /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Creature.cpp; sourceTree = "<group>"; };
 		262301C01B5A067000C333A8 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
+		262301C21B5A100E00C333A8 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		262301C31B5A100E00C333A8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				262301BA1B5A041300C333A8 /* Game.h */,
 				262301BF1B5A067000C333A8 /* Creature.cpp */,
 				262301C01B5A067000C333A8 /* Creature.h */,
+				262301C21B5A100E00C333A8 /* Player.cpp */,
+				262301C31B5A100E00C333A8 /* Player.h */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262301C41B5A100E00C333A8 /* Player.cpp in Sources */,
 				262301B31B5A03F700C333A8 /* main.cpp in Sources */,
 				262301C11B5A067000C333A8 /* Creature.cpp in Sources */,
 				262301BB1B5A041300C333A8 /* Game.cpp in Sources */,
@@ -247,6 +253,7 @@
 				262301B81B5A03F700C333A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

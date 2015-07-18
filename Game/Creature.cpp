@@ -8,6 +8,21 @@
 
 #include "Creature.h"
 
+Creature::Creature(){
+    setHealth( 100 );
+    setLevel( 1 );
+}
+
+Creature::Creature( int cHealth, int cLevel ){
+    setHealth( cHealth );
+    setLevel( cLevel );
+}
+
+Creature::Creature( std::string name, int cHealth, int cLevel ){
+    setHealth( cHealth );
+    setLevel( cLevel );
+}
+
 int Creature::getHealth(){
     return health;
 }
@@ -22,4 +37,16 @@ int Creature::getLevel(){
 
 void Creature::setLevel( int cLevel ){
     level = cLevel;
+}
+
+int Creature::attack(){
+    return (health * level) / 2;
+}
+
+std::string Creature::getName(){
+    return name;
+}
+
+void Creature::setName( std::string cName ){
+    name = cName;
 }
