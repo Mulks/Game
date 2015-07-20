@@ -11,6 +11,7 @@
 		262301BB1B5A041300C333A8 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301B91B5A041300C333A8 /* Game.cpp */; };
 		262301C11B5A067000C333A8 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301BF1B5A067000C333A8 /* Creature.cpp */; };
 		262301C41B5A100E00C333A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301C21B5A100E00C333A8 /* Player.cpp */; };
+		262301CA1B5C96BF00C333A8 /* ReadMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301C81B5C96BF00C333A8 /* ReadMap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		262301C01B5A067000C333A8 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
 		262301C21B5A100E00C333A8 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		262301C31B5A100E00C333A8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		262301C81B5C96BF00C333A8 /* ReadMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadMap.cpp; sourceTree = "<group>"; };
+		262301C91B5C96BF00C333A8 /* ReadMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadMap.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				262301C01B5A067000C333A8 /* Creature.h */,
 				262301C21B5A100E00C333A8 /* Player.cpp */,
 				262301C31B5A100E00C333A8 /* Player.h */,
+				262301C81B5C96BF00C333A8 /* ReadMap.cpp */,
+				262301C91B5C96BF00C333A8 /* ReadMap.h */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				262301C41B5A100E00C333A8 /* Player.cpp in Sources */,
 				262301B31B5A03F700C333A8 /* main.cpp in Sources */,
 				262301C11B5A067000C333A8 /* Creature.cpp in Sources */,
+				262301CA1B5C96BF00C333A8 /* ReadMap.cpp in Sources */,
 				262301BB1B5A041300C333A8 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
