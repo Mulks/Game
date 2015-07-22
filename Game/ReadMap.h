@@ -11,7 +11,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
-void readMap( std::string filename , char (&map)[100][24]);
+void readMap( std::string filename , std::vector<std::vector<char>> &map);
 
 #endif /* defined(__Game__ReadMap__) */

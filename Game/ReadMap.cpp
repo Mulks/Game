@@ -9,13 +9,13 @@
 #include "ReadMap.h"
 #include <fstream>
 
-void readMap( std::string filename , char (&map)[100][24]){
+void readMap( std::string filename , std::vector<std::vector<char>> &map){
     
     std::ifstream file(filename);
     char c;
     std::string line;
     
-    char mapArray[100][24];
+    //char mapArray[100][24];
     
     
         
@@ -28,10 +28,10 @@ void readMap( std::string filename , char (&map)[100][24]){
                 //std::cout << "line[" << j << "][" << i << "] = " << line[j] << std::endl;
                 //std::cout << "c[" << j << "][" << i << "] = " << c << std::endl;
                 
-                mapArray[j][i] = c;
+                map[j][i] = c;
                 //std::cout << "mapArray[" << j << "][" << i << "] = " << mapArray[j][i] << std::endl;
                 
-                std::cout << "mapArray[1][1] = " << mapArray[1][1] << "  [" << j << "][" << i << "]" << std::endl;
+                //std::cout << "mapArray[1][1] = " << mapArray[1][1] << "  [" << j << "][" << i << "]" << std::endl;
             }
 
         }
@@ -42,23 +42,23 @@ void readMap( std::string filename , char (&map)[100][24]){
     
     
     //file >> line;
-    std::cout << "First part of map: " << mapArray[1][1] << std::endl;
+    //std::cout << "First part of map: " << map[1][1] << std::endl;
     //std::cout << "Line: " << line << std::endl;
     
     /*for( int i = 0; i < 100; i++ ){
         mapArray[i][0] = line[i];
         std::cout << mapArray[i][0];
     }*/
-    for( int i = 0; i < 24; i++ ){
+    /*for( int i = 0; i < 24; i++ ){
         for( int j = 0; j < 100; j++ ){
             
-            std::cout << mapArray[j][i];
+            std::cout << map[j][i];
             //std::cout << "mapArray[" << j << "][" << i << "] = " << mapArray[j][i] << std::endl;
 
         }
         std::cout << "\n";
         
-    }
+    }*/
     
     
 }

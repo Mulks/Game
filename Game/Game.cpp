@@ -7,10 +7,12 @@
 //
 
 #include <iostream>
+#include <vector>
 #include "Game.h"
 #include "Creature.h"
 #include "Player.h"
 #include "ReadMap.h"
+
 
 
 using namespace std;
@@ -43,7 +45,7 @@ int Game(){
     cout << demon.getName() << "'s health: " << demon.getHealth() << endl;
     fillScreen();
     clearScreen();
-    
+    */
     string choice;
     
     
@@ -57,11 +59,16 @@ int Game(){
         else if( choice == "fill" ){
             fillScreen();
         }
-    }*/
+    }
     
     
     string filename;
-    char map[100][24];
+    //char map[100][24];
+    vector<vector<char>> map;
+    map.resize( 100 );
+    for( int  i = 0; i < 100; i++ ){
+        map[i].resize( 24 );
+    }
     
     cout << "Enter file name" << endl;
     cout << "map.txt:    ";
@@ -71,13 +78,22 @@ int Game(){
     
     readMap( filename, map );
     
-    /*for( int i = 0; i < 24; i++ ){
+    cout << "This is first char: " << map[0][0] << endl;
+    
+    for( int i = 0; i < 24; i++ ){
         for( int j = 0; j < 100; j++ ){
             cout << map[j][i];
         }
         cout << "\n";
         
-    }*/
+    }
+    
+    for( int i = 0; i < 24; i++ ){
+        for(int j = 0; j < 100; j++ ){
+            cout << "#";
+        }
+        cout << "\n";
+    }
     
     
     return 0;
