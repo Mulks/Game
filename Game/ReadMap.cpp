@@ -21,7 +21,7 @@ void readMap( std::string filename , std::vector<std::vector<char>> &map){
         
     while(  getline( file, line ) ){
         for( int i = 0; i < 24; i++ ){
-            getline( file, line );
+            
             for( int j = 0; j < 100; j++ ){
                 
                 c = line[j];
@@ -33,6 +33,7 @@ void readMap( std::string filename , std::vector<std::vector<char>> &map){
                 
                 //std::cout << "mapArray[1][1] = " << mapArray[1][1] << "  [" << j << "][" << i << "]" << std::endl;
             }
+            getline( file, line );
 
         }
         

@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 #include "Game.h"
 #include "Creature.h"
 #include "Player.h"
@@ -64,6 +65,10 @@ int Game(){
     
     string filename;
     //char map[100][24];
+    
+    map<int,int> playerLocation;
+    
+    
     vector<vector<char>> map;
     map.resize( 100 );
     for( int  i = 0; i < 100; i++ ){
@@ -83,17 +88,25 @@ int Game(){
     for( int i = 0; i < 24; i++ ){
         for( int j = 0; j < 100; j++ ){
             cout << map[j][i];
+            if( map[j][i] == '@' ){
+                playerLocation.insert( pair<int,int>( j, i ));
+            }
         }
         cout << "\n";
         
     }
     
-    for( int i = 0; i < 24; i++ ){
+    cout << "Players location is: ";
+    for (auto& x: playerLocation) {
+        std::cout << "( " << x.first << ", " << x.second << " )" << endl;
+    }
+    
+    /*for( int i = 0; i < 24; i++ ){
         for(int j = 0; j < 100; j++ ){
             cout << "#";
         }
         cout << "\n";
-    }
+    }*/
     
     
     return 0;
