@@ -13,6 +13,7 @@
 #include "Creature.h"
 #include "Player.h"
 #include "ReadMap.h"
+#include "ShowMap.h"
 
 
 
@@ -83,23 +84,28 @@ int Game(){
     
     readMap( filename, map );
     
-    cout << "This is first char: " << map[0][0] << endl;
+    
+    //Used to figure out if beginning of map is working
+    //cout << "This is first char: " << map[0][0] << endl;
     
     for( int i = 0; i < 24; i++ ){
         for( int j = 0; j < 100; j++ ){
-            cout << map[j][i];
+            //cout << map[j][i];
             if( map[j][i] == '@' ){
                 playerLocation.insert( pair<int,int>( j, i ));
             }
         }
-        cout << "\n";
+        //cout << "\n";
         
     }
+    
     
     cout << "Players location is: ";
     for (auto& x: playerLocation) {
         std::cout << "( " << x.first << ", " << x.second << " )" << endl;
     }
+    
+    showMap( map );
     
     /*for( int i = 0; i < 24; i++ ){
         for(int j = 0; j < 100; j++ ){
