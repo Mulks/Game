@@ -8,30 +8,62 @@
 
 #include "ReadMap.h"
 #include <fstream>
+#include <unistd.h>
 
 void readMap( std::string filename , std::vector<std::vector<char>> &map){
     
-    std::ifstream file(filename);
+    //Test file openers
+    //std::ifstream file(filename.c_str());
+    //std::ifstream file("/Users/Mulky/Library/Developer/Xcode/DerivedData/Game-dzfptcscvflqjvexkcxivpmbqfjm/Build/Products/Debug/map.txt");
+    //std::ifstream file("map.txt", std::ios::in| std::ios::out);
+    
+    //Used to store char from text file.
     char c;
+    
+    //Char buffer used for getting current working directory.
+    char buffer[1000];
+    
+    //Get current working directory and put into string.
+    char *answer = getcwd(buffer, sizeof(buffer));
+    
+    //String to hold the line read in from file.
     std::string line;
     
-    //char mapArray[100][24];
+    //String to hold the current working directory.
+    std::string s_cwd;
     
     
-        
+    if (answer)
+    {
+        s_cwd = answer;
+        std::cout << "reached inside answer" << std::endl;
+    }
+    
+    s_cwd += "/" + filename;
+    
+    //std::cout << "Current working directory is: " << s_cwd << std::endl;
+    
+    //Open file in current working directory
+    std::ifstream file(s_cwd);
+    
+    if( file.good()){
+        std::cout << "File found" << std::endl;
+    }
+    else{
+        std::cout << "File not found" << std::endl;
+    }
+    
+    //While there is a new line extract line to "line".
     while(  getline( file, line ) ){
+        
+        //Nested for loops to extract chars from "line".
         for( int i = 0; i < 24; i++ ){
             
             for( int j = 0; j < 100; j++ ){
                 
                 c = line[j];
-                //std::cout << "line[" << j << "][" << i << "] = " << line[j] << std::endl;
-                //std::cout << "c[" << j << "][" << i << "] = " << c << std::endl;
                 
                 map[j][i] = c;
-                //std::cout << "mapArray[" << j << "][" << i << "] = " << mapArray[j][i] << std::endl;
-                
-                //std::cout << "mapArray[1][1] = " << mapArray[1][1] << "  [" << j << "][" << i << "]" << std::endl;
             }
             getline( file, line );
 
@@ -39,27 +71,8 @@ void readMap( std::string filename , std::vector<std::vector<char>> &map){
         
     }
     
-    //mapArray[0][0] = '#';
-    
-    
-    //file >> line;
-    //std::cout << "First part of map: " << map[1][1] << std::endl;
-    //std::cout << "Line: " << line << std::endl;
-    
-    /*for( int i = 0; i < 100; i++ ){
-        mapArray[i][0] = line[i];
-        std::cout << mapArray[i][0];
-    }*/
-    /*for( int i = 0; i < 24; i++ ){
-        for( int j = 0; j < 100; j++ ){
-            
-            std::cout << map[j][i];
-            //std::cout << "mapArray[" << j << "][" << i << "] = " << mapArray[j][i] << std::endl;
-
-        }
-        std::cout << "\n";
-        
-    }*/
+    //Close file stream.
+    file.close();
     
     
 }

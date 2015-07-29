@@ -13,7 +13,10 @@
 #include "Creature.h"
 #include "Player.h"
 #include "ReadMap.h"
-#include "ShowMap.h"
+#include "DrawMap.h"
+#include "MovePlayer.h"
+#include "GetPlayerLoc.h"
+#include "ShowPlayerLoc.h"
 
 
 
@@ -48,7 +51,7 @@ int Game(){
     fillScreen();
     clearScreen();
     */
-    string choice;
+    /*string choice;
     
     
     while( choice != "n" ){
@@ -61,7 +64,7 @@ int Game(){
         else if( choice == "fill" ){
             fillScreen();
         }
-    }
+    }*/
     
     
     string filename;
@@ -83,12 +86,19 @@ int Game(){
     
     
     readMap( filename, map );
+    playerLocation.insert( getPlayerLoc( map ));
+    showPlayerLoc( playerLocation );
+    drawMap( map );
+    
+    movePlayer( map, playerLocation );
+    showPlayerLoc( playerLocation );
+    drawMap( map );
     
     
     //Used to figure out if beginning of map is working
     //cout << "This is first char: " << map[0][0] << endl;
     
-    for( int i = 0; i < 24; i++ ){
+    /*for( int i = 0; i < 24; i++ ){
         for( int j = 0; j < 100; j++ ){
             //cout << map[j][i];
             if( map[j][i] == '@' ){
@@ -97,23 +107,9 @@ int Game(){
         }
         //cout << "\n";
         
-    }
-    
-    
-    cout << "Players location is: ";
-    for (auto& x: playerLocation) {
-        std::cout << "( " << x.first << ", " << x.second << " )" << endl;
-    }
-    
-    showMap( map );
-    
-    /*for( int i = 0; i < 24; i++ ){
-        for(int j = 0; j < 100; j++ ){
-            cout << "#";
-        }
-        cout << "\n";
     }*/
     
+
     
     return 0;
 }

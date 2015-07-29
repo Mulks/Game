@@ -12,7 +12,11 @@
 		262301C11B5A067000C333A8 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301BF1B5A067000C333A8 /* Creature.cpp */; };
 		262301C41B5A100E00C333A8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301C21B5A100E00C333A8 /* Player.cpp */; };
 		262301CA1B5C96BF00C333A8 /* ReadMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301C81B5C96BF00C333A8 /* ReadMap.cpp */; };
-		262301CD1B6462FE00C333A8 /* ShowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301CB1B6462FE00C333A8 /* ShowMap.cpp */; };
+		262301D01B689E6D00C333A8 /* DrawMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301CE1B689E6D00C333A8 /* DrawMap.cpp */; };
+		262301D31B68A04E00C333A8 /* MovePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301D11B68A04E00C333A8 /* MovePlayer.cpp */; };
+		262301D61B68A45600C333A8 /* ShowPlayerLoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301D41B68A45600C333A8 /* ShowPlayerLoc.cpp */; };
+		262301D91B68A51D00C333A8 /* GetPlayerLoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301D71B68A51D00C333A8 /* GetPlayerLoc.cpp */; };
+		262301DC1B68A71400C333A8 /* GetValidMoves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 262301DA1B68A71400C333A8 /* GetValidMoves.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +42,16 @@
 		262301C31B5A100E00C333A8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		262301C81B5C96BF00C333A8 /* ReadMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadMap.cpp; sourceTree = "<group>"; };
 		262301C91B5C96BF00C333A8 /* ReadMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadMap.h; sourceTree = "<group>"; };
-		262301CB1B6462FE00C333A8 /* ShowMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShowMap.cpp; sourceTree = "<group>"; };
-		262301CC1B6462FE00C333A8 /* ShowMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMap.h; sourceTree = "<group>"; };
+		262301CE1B689E6D00C333A8 /* DrawMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawMap.cpp; sourceTree = "<group>"; };
+		262301CF1B689E6D00C333A8 /* DrawMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawMap.h; sourceTree = "<group>"; };
+		262301D11B68A04E00C333A8 /* MovePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovePlayer.cpp; sourceTree = "<group>"; };
+		262301D21B68A04E00C333A8 /* MovePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovePlayer.h; sourceTree = "<group>"; };
+		262301D41B68A45600C333A8 /* ShowPlayerLoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShowPlayerLoc.cpp; sourceTree = "<group>"; };
+		262301D51B68A45600C333A8 /* ShowPlayerLoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPlayerLoc.h; sourceTree = "<group>"; };
+		262301D71B68A51D00C333A8 /* GetPlayerLoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetPlayerLoc.cpp; sourceTree = "<group>"; };
+		262301D81B68A51D00C333A8 /* GetPlayerLoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPlayerLoc.h; sourceTree = "<group>"; };
+		262301DA1B68A71400C333A8 /* GetValidMoves.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetValidMoves.cpp; sourceTree = "<group>"; };
+		262301DB1B68A71400C333A8 /* GetValidMoves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetValidMoves.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +93,16 @@
 				262301C31B5A100E00C333A8 /* Player.h */,
 				262301C81B5C96BF00C333A8 /* ReadMap.cpp */,
 				262301C91B5C96BF00C333A8 /* ReadMap.h */,
-				262301CB1B6462FE00C333A8 /* ShowMap.cpp */,
-				262301CC1B6462FE00C333A8 /* ShowMap.h */,
+				262301CE1B689E6D00C333A8 /* DrawMap.cpp */,
+				262301CF1B689E6D00C333A8 /* DrawMap.h */,
+				262301D11B68A04E00C333A8 /* MovePlayer.cpp */,
+				262301D21B68A04E00C333A8 /* MovePlayer.h */,
+				262301D41B68A45600C333A8 /* ShowPlayerLoc.cpp */,
+				262301D51B68A45600C333A8 /* ShowPlayerLoc.h */,
+				262301D71B68A51D00C333A8 /* GetPlayerLoc.cpp */,
+				262301D81B68A51D00C333A8 /* GetPlayerLoc.h */,
+				262301DA1B68A71400C333A8 /* GetValidMoves.cpp */,
+				262301DB1B68A71400C333A8 /* GetValidMoves.h */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -144,11 +164,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				262301C41B5A100E00C333A8 /* Player.cpp in Sources */,
+				262301D91B68A51D00C333A8 /* GetPlayerLoc.cpp in Sources */,
 				262301B31B5A03F700C333A8 /* main.cpp in Sources */,
 				262301C11B5A067000C333A8 /* Creature.cpp in Sources */,
+				262301DC1B68A71400C333A8 /* GetValidMoves.cpp in Sources */,
 				262301CA1B5C96BF00C333A8 /* ReadMap.cpp in Sources */,
 				262301BB1B5A041300C333A8 /* Game.cpp in Sources */,
-				262301CD1B6462FE00C333A8 /* ShowMap.cpp in Sources */,
+				262301D31B68A04E00C333A8 /* MovePlayer.cpp in Sources */,
+				262301D61B68A45600C333A8 /* ShowPlayerLoc.cpp in Sources */,
+				262301D01B689E6D00C333A8 /* DrawMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
